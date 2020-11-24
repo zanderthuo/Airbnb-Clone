@@ -7,9 +7,12 @@ import 'react-date-range/dist/theme/default.css'; // theme css file
 import PeopleIcon from '@material-ui/icons/People';
 import { Button } from '@material-ui/core';
 
+import { useHistory } from 'react-router-dom';
+
 import '../styles/Search.css';
 
 const Search = () => {
+    const history = useHistory();
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
 
@@ -35,7 +38,7 @@ const Search = () => {
             defaultValue={2}
             type="number"
             />
-            <Button className="button">Search Airbnb</Button>
+            <Button className="button" onClick={() => history.push('/search')}>Search Airbnb</Button>
         </div>
     )
 }
