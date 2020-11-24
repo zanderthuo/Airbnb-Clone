@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Card from '../components/Card';
-
+import Footer from '../components/Footer';
 import '../styles/Home.css';
 
 const Home = () => {
@@ -47,7 +47,7 @@ const Home = () => {
                     price="£70/night"
                 />
             </div>
-
+            <Footer />
         </div>
     )
 }
