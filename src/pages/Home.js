@@ -1,14 +1,11 @@
 import React from 'react';
-import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Card from '../components/Card';
-import Footer from '../components/Footer';
 import '../styles/Home.css';
 
 const Home = () => {
     return (
         <div className="home">
-            <Header />
             <Banner />
             <div className="home__section">
                 <Card
@@ -47,7 +44,6 @@ const Home = () => {
                     price="£70/night"
                 />
             </div>
-            <Footer />
         </div>
     )
 }
